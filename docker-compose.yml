@@ -1,0 +1,27 @@
+version: '4'
+
+services:
+
+  stack:
+    container_name: stack
+    hostname: stack
+    build:
+       context: .
+       dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+    networks:
+      - sublate
+    ports:
+      - '4000:4000'
+    command: 
+      - 'sh'
+      - '-c'
+      - |
+       bundle exec jekyll serve --host=0.0.0.0 --port=4000 --livereload
+#       tail -f /dev/null
+
+networks:
+  sublate:
+    driver: bridge
+
