@@ -1,8 +1,8 @@
 /* nav specialized to landing page */
 .logo {
   display: inline-block; /* Isso permite que você defina um tamanho para o elemento */
-  width: 50px; /* Largura do logo - ajuste conforme necessário */
-  height: 50px; /* Altura do logo - ajuste conforme necessário */
+  width: 40px; /* Largura do logo - ajuste conforme necessário */
+  height: 40px; /* Altura do logo - ajuste conforme necessário */
   background-image: url('logo.png');
   background-size: contain; /* Isso faz com que a imagem se ajuste dentro do elemento, mantendo as proporções */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
